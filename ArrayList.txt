@@ -1,0 +1,44 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Collections;
+
+public class Main{
+  public static void main(String args[]){
+    List<String> colors=new ArrayList<String>();
+    colors.add("Blue");
+    colors.add("Red");
+    colors.add("White");
+    colors.add("Black");
+    System.out.println(colors);
+    Iterator itr=colors.iterator();
+    while(itr.hasNext()){
+      System.out.println(itr.next());
+    }
+    colors.add(0,"Pink");
+    System.out.println(colors);
+    
+    System.out.println(colors.get(2));
+    System.out.println(colors.set(2,"Green"));
+    System.out.println(colors);
+    System.out.println(colors.remove(3));
+    System.out.println(colors);
+    if(colors.contains("Red")){
+      System.out.println("Found the element");
+    }
+    else{
+      System.out.println("There is no element");
+    }
+    Collections.sort(colors);
+    System.out.println(colors);
+    List<String> colorNames=new ArrayList<String>();
+    colorNames.addAll(colors);
+    System.out.println(colorNames);
+    System.out.println("Before shuffle :"+colorNames);
+    Collections.shuffle(colorNames);
+    System.out.println("After shuffle :"+colorNames);
+    Collections.reverse(colorNames);
+    System.out.println(colorNames);
+    
+  }
+}
