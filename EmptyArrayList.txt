@@ -1,0 +1,16 @@
+import java.util.List;
+import java.util.ArrayList;
+public class Main{
+  public static void main(String args[])
+  {
+    List<String> vehicleLists=new ArrayList<String>();
+    vehicleLists.add("Hero");
+    vehicleLists.add("Apache");
+    vehicleLists.add("Yamaha");
+    vehicleLists.add("Suzuki");
+    System.out.println(vehicleLists);
+    vehicleLists.removeAll(vehicleLists);
+    System.out.println(vehicleLists);
+    
+  }
+}

@@ -1,0 +1,21 @@
+import java.util.List;
+import java.util.ArrayList;
+public class Main{
+  public static void main(String args[])
+  {
+    List<String> vehicleLists=new ArrayList<String>();
+    vehicleLists.add("Hero");
+    vehicleLists.add("Apache");
+    vehicleLists.add("Yamaha");
+    vehicleLists.add("Suzuki");
+    List<String> vehicleLists1=new ArrayList<String>();
+    vehicleLists1.add("Honda");
+    vehicleLists1.add("Apache");
+    vehicleLists1.add("Yamaha");
+    vehicleLists1.add("Suzuki");
+    List<String> vehicleLists2=new ArrayList<String>();
+    vehicleLists2.addAll(vehicleLists);
+    vehicleLists2.addAll(vehicleLists1);
+    System.out.println(vehicleLists2);
+  }
+}

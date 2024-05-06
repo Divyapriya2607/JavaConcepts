@@ -1,0 +1,23 @@
+import java.util.List;
+import java.util.ArrayList;
+public class Main{
+  public static void main(String args[])
+  {
+    List<String> vehicleLists=new ArrayList<String>();
+    vehicleLists.add("Hero");
+    vehicleLists.add("Apache");
+    vehicleLists.add("Yamaha");
+    vehicleLists.add("Suzuki");
+    List<String> vehicleLists1=new ArrayList<String>();
+    vehicleLists1.add("Hero");
+    vehicleLists1.add("Apache");
+    vehicleLists1.add("Mastero");
+    vehicleLists1.add("Suzuki");
+    List<String> vehicleLists2=new ArrayList<String>();
+    for(String e : vehicleLists){
+     vehicleLists2.add(vehicleLists1.contains(e)?"Yes":"No");
+     System.out.println(vehicleLists2);
+    }
+    
+  }
+}
