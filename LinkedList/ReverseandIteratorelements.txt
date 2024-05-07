@@ -1,0 +1,17 @@
+import java.util.LinkedList;
+import java.util.Iterator;
+public class Main {
+  public static void main(String[] args) {
+          LinkedList<String> c1= new LinkedList<String>();
+          c1.add("Red");
+          c1.add("Green");
+          c1.add("Black");
+          c1.add("White");
+          c1.add("Pink");
+          Iterator itr=c1.descendingIterator();
+          System.out.println("After Reverse the elements");
+          while(itr.hasNext()){
+            System.out.println(itr.next());
+          }
+   }
+}
