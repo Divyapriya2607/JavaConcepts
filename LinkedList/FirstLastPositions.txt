@@ -1,0 +1,17 @@
+//Write a Java program to insert elements into the linked list at the first and last positions
+import java.util.LinkedList;
+import java.util.Iterator;
+public class Main {
+  public static void main(String[] args) {
+          LinkedList<String> c1= new LinkedList<String>();
+          c1.add("Red");
+          c1.add("Green");
+          c1.add("Black");
+          c1.add("White");
+          c1.add("Pink");
+          System.out.println("Before Linked Lists : "+c1);
+          c1.addFirst("Yellow");
+          c1.addLast("Blue");
+          System.out.println("After Linked Lists : "+c1);
+   }
+}
