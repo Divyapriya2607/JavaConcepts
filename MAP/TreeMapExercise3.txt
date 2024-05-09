@@ -1,0 +1,19 @@
+import java.util.*;
+import java.util.Map.Entry;
+
+public class Main{
+  public static void main(String args[]){
+    TreeMap<Integer,String> tree_map=new TreeMap<Integer,String>();
+    tree_map.put(1,"White");
+    tree_map.put(2,"Black");
+    tree_map.put(3,"Blue");
+    tree_map.put(4,"Green");
+    tree_map.put(5,"Red");
+    if(tree_map.containsKey(1)){
+      System.out.println("The tree map contains key 1");
+    }
+    else{
+      System.out.println("The tree map does not contains key 1");
+    }
+  }
+}
