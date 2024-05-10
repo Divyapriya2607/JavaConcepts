@@ -1,0 +1,11 @@
+public class Main{
+  public static void main(String args[]){
+    String originalString,reverseString="";
+    originalString="India is my country , I love india!";
+    char[] charString=originalString.toCharArray();
+    for(char str:charString){
+      reverseString = str+reverseString;
+    }
+    System.out.println(reverseString);
+  }
+}

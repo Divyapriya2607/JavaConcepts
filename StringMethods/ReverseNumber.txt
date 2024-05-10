@@ -1,0 +1,12 @@
+public class Main{
+  public static void main(String args[]){
+    int originalNumber,reverseNumber=0, reminder;
+    originalNumber=123456;
+    while(originalNumber!=0){
+      reminder=originalNumber%10;
+      reverseNumber=reverseNumber*10+reminder;
+      originalNumber=originalNumber/10;
+    }
+    System.out.println("The reverse of the given number : "+reverseNumber);
+  }
+}
