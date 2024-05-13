@@ -1,0 +1,21 @@
+public class Main{
+  public static void main(String args[]){
+     String str1="I Love India",reverseString="",reverseWord="";
+    char[] letter=str1.toCharArray();
+    for(char l:letter){
+      reverseString=l+reverseString;
+    }
+    System.out.println(reverseString);
+    String[] words=reverseString.split("\\s");
+    for(String word : words){
+      StringBuilder sb=new StringBuilder(word);
+      sb.reverse();
+      reverseWord+=sb.toString()+" ";
+     
+    }
+    System.out.println(reverseWord.trim());
+    
+    
+  }
+}
+
