@@ -1,0 +1,21 @@
+public class Main{
+  public static void main(String args[]){
+    int temp=0;
+    int[] values={1,2,9,4,5};
+    System.out.println("Original Array values : ");
+    for(int i=0;i<values.length;i++){
+      System.out.println(values[i]);
+    }
+    System.out.println("Sorted Array List :");
+    for(int i=0;i<values.length;i++){
+      for(int j=i+1;j<values.length;j++){
+        if(values[i]<values[j]){
+          temp=values[i];
+          values[i]=values[j];
+          values[j]=temp;
+        }
+      }
+      System.out.println(values[i]);
+    }
+  }
+}
